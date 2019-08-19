@@ -1,6 +1,7 @@
 package com.secure.app.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -12,6 +13,7 @@ import com.secure.app.service.SecurityService;
 import com.secure.app.validator.UserValidator;
 
 @Controller
+@PropertySource("classpath:messages.properties")
 public class UserController {
     //@Autowired
     private UserService userService;

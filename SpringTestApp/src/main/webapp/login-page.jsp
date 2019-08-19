@@ -1,5 +1,6 @@
 <%@ include file="/IncludeTags.jsp" %>
 <%@ include file="/IncludeCss.jsp" %>
+<link href="${appContextPath}/resources/css/style.css" rel="stylesheet">
 	<title>Login</title>
 <div id="login-body">
 	<div class="paper border">
