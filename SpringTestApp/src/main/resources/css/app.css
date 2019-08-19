@@ -1,0 +1,229 @@
+/* html{
+	background-color:#2F2F2F;
+} */
+
+/* body{
+	height: 100%;
+	background-color:rgb(245, 245, 245);
+} */
+
+
+/* #header {
+    margin-left:20%;
+    top: 0px;
+    width: 80%;
+	height: 20%;
+	position: fixed;
+	font-family: 'bgMed',arial,helvetica,sans-serif;
+    font-size: 0.6em;
+    color: #fff;
+    z-index: 15;
+    text-transform: uppercase;
+    background-color: #272727;
+    border-bottom: 2px solid hsl(180,70%,55%);
+    padding-top:20px;
+    text-align:center;
+} */
+/* 
+#footer {
+	margin-left:20%;
+    left: 0px;
+    bottom: 0px;
+    width: 80%;
+	height: 10%;
+	position: fixed;
+	font-family: 'bgMed',arial,helvetica,sans-serif;
+    font-size: 0.6em;
+    color: #fff;
+    z-index: 15;
+    text-transform: uppercase;
+    background-color: #272727;
+	padding-top:20px;   
+    text-align:center;
+} */
+
+
+#sidemenu {
+    width: auto;
+    padding: 22px;
+    float: left;
+}
+
+#sidemenu #menu {
+    color: #fff;
+    text-align: right;
+    list-style-type: none;
+    margin-right: 40px;
+    float: right;
+}
+
+#sidemenu #menu li {
+    width: 150px;
+    height: 35px;
+    font-size: 1.2em;
+    padding-right:5px;
+}
+
+#sidemenu #menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#sidemenu #menu li:active{
+	border-left: 5px solid hsl(180,70%,55%);
+}
+
+#sidemenu #menu li:hover {
+    background-color: #635555;
+    border-left: 5px solid hsl(180,70%,55%);
+}
+
+#site-content {
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+    float: left;
+    z-index: 20;
+    position: fixed;
+    min-height: 600px;
+    margin-top:10%;
+    margin-bottom:10%;
+    margin-left:20%;
+    padding-left:10px;
+}
+    
+DIV.register2 {							/* BRANDING TEMPLATE TABLE 2; Check Register table */
+	width : 100%;						/* This used to be defined in the HTML <TABLE> tag */
+	background-color : #3E7BA7;
+	margin : 3px;
+	padding : 2px 0px 2px 0px;
+}
+
+TABLE.register2 TH {						/* BRANDING TEMPLATE TABLE 2; Check Register table */
+	background-color : #EAF1F7;
+	color : black;
+	font-weight : bold;
+	padding-right: 20px;
+}
+
+TABLE.register2 TD {						/* BRANDING TEMPLATE TABLE 2; Check Register table */
+	padding-right: 20px;
+}
+
+TABLE.register2 {						/* BRANDING TEMPLATE TABLE 2; Check Register table */
+	background-color : #9BA9B3;
+	width : 100%;						/* This used to be defined in the HTML <TABLE> tag */
+}
+
+TABLE.reportMain {						/* Main <TABLE> after Printer-Friendly links */
+	clear : both;
+	width: 100%;						/* Reset above left/right floats before report controls */
+}
+
+.reportTopPrintLink {					/* Above report Printer-Friendly & View in Excel links */
+	float : right;						/* Force Printer-Friendly links to the far right */
+	width : 275px;						/* Defines Printer-Friendly links box width */
+	text-align : right;					/* Right-align text "Trouble viewing or printing?" */
+	padding-bottom : 15px;				/* Bottom padding after links & before report controls */
+}
+
+.reportTopPrintLinkExtended {			/* Specialized report Printer-Friendly & View in Excel links */
+	float : right;						/* Force Printer-Friendly links to the far right */
+	width : 400px;						/* Defines Printer-Friendly links box width */
+	text-align : right;					/* Right-align text "Trouble viewing or printing?" */
+	padding-bottom : 15px;				/* Bottom padding after links & before report controls */
+}
+
+
+/* ----------------------------
+*
+* Icons
+*
+* --------------------------- */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont.svg#iconfont') format('svg'),
+    url('../fonts/iconfont.woff') format('woff'),
+    url('../fonts/iconfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Utility classes */
+/* Spaces */
+span.spacer2Pix {display:inline-block; width:2px;}
+span.spacer3Pix {display:inline-block; width:3px;}
+span.spacer4Pix {display:inline-block; width:4px;}
+span.spacer5Pix {display:inline-block; width:5px;}
+span.spacer10Pix {display:inline-block; width:10px;}
+span.spacer15Pix {display:inline-block; width:15px;}
+span.spacer20Pix {display:inline-block; width:20px;}
+span.spacer25Pix {display:inline-block; width:25px;}
+span.spacer30Pix {display:inline-block; width:30px;}
+span.spacer35Pix {display:inline-block; width:35px;}
+span.spacer40Pix {display:inline-block; width:40px;}
+span.spacer45Pix {display:inline-block; width:45px;}
+span.spacer50Pix {display:inline-block; width:45px;}
+span.spacer55Pix {display:inline-block; width:55px;}
+span.spacer60Pix {display:inline-block; width:60px;}
+span.spacer65Pix {display:inline-block; width:65px;}
+span.spacer70Pix {display:inline-block; width:70px;}
+span.spacer75Pix {display:inline-block; width:75px;}
+span.spacer80Pix {display:inline-block; width:80px;}
+span.spacer85Pix {display:inline-block; width:85px;}
+span.spacer90Pix {display:inline-block; width:90px;}
+span.spacer95Pix {display:inline-block; width:95px;}
+span.spacer100Pix {display:inline-block; width:100px;}
+
+.va-m { vertical-align: middle; }
+.va-t { vertical-align: top; }
+
+/** Bootstrap overrides */
+.modal-dialog {
+    width: 450px;
+}
+
+/** Error Messages */
+.error-msg {
+    color: red;
+}
+
+.footer {
+	background-color: #33C0C8;
+	text-align: center;
+	border-radius: 4px;
+	font-family: verdana;
+	font-style: italic;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-top: 15px;
+}
+
+.page {
+	
+}
+
+.mainBody {								/* Overall body text padding */
+	font-size : 8pt;
+	font-family: Verdana;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.infoTROdd, .infoTREven {
+	/** background-color : #FFFFFF; **/
+	padding-top : 10px;
+	padding-right : 20px;
+	padding-bottom : 10px;
+	padding-left : 20px;
+	border-bottom-style : solid;
+	border-bottom-width : 1px;
+	border-bottom-color : #CCCCCC;
+}
+
+
