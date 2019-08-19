@@ -6,9 +6,9 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-import com.secure.app.Service.SecurityService;
 import com.secure.app.User.Service.UserService;
 import com.secure.app.model.User;
+import com.secure.app.service.SecurityService;
 import com.secure.app.validator.UserValidator;
 
 @Controller
@@ -59,7 +59,7 @@ public class UserController {
         if (logout != null)
             model.addAttribute("message", "You have been logged out successfully.");
 
-        return "login";
+        return "login-page";
     }
 
     @GetMapping({"/", "/welcome"})
