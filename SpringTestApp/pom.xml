@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>com.secure.app</groupId>
 	<artifactId>secure-app</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>war</packaging>
-	<name>SpringTestApp</name>
+	<name>BaseCode</name>
 	<description></description>
 
 	<properties>
