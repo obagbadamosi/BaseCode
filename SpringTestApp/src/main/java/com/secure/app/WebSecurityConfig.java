@@ -31,8 +31,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .formLogin()
                 .loginPage("/login")
                 .permitAll()
+                //.successForwardUrl("/registration")
+                .defaultSuccessUrl("/welcome")
                 .and()
-            .logout()
+            .logout().deleteCookies("JSESSIONID")
                 .permitAll();
     }
 

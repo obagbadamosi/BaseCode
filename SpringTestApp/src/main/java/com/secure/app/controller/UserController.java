@@ -5,6 +5,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.*;
 
 import com.secure.app.User.Service.UserService;
@@ -31,27 +32,37 @@ public class UserController {
     	this.securityService = securityService;
     }
 
-    @GetMapping("/registration")
-    public String registration(Model model) {
-        model.addAttribute("userForm", new User());
+	
+	
+	  @GetMapping("/registration") 
+	  public String registration(Model model) {
+		  model.addAttribute("userForm", new User()); 
+		  System.out.println("Here");
+		  return "registration"; 
+	  }
+	 
+	 
 
-        return "registration";
-    }
-
-    @PostMapping("/registration")
-    public String registration(@ModelAttribute("userForm") User userForm, BindingResult bindingResult) {
-        userValidator.validate(userForm, bindingResult);
-
-        if (bindingResult.hasErrors()) {
-            return "registration";
-        }
-
-        userService.save(userForm);
-
-        securityService.autoLogin(userForm.getUsername(), userForm.getPasswordConfirm());
-
-        return "redirect:/welcome";
-    }
+	
+	  @PostMapping("/registration") 
+	  public String registration(@ModelAttribute("userForm") User userForm, BindingResult bindingResult) {
+	 userValidator.validate(userForm, bindingResult);
+	  System.out.println("Here too");
+	  if (bindingResult.hasErrors()) {
+		  
+		  for(ObjectError err : bindingResult.getAllErrors())
+		  {
+			  System.out.println(err.toString());
+		  }
+		  return "registration"; 
+	  }
+	  
+	  userService.save(userForm);
+	  securityService.autoLogin(userForm.getUsername(), userForm.getPasswordConfirm());
+	  
+	  return "redirect:/welcome"; 
+	}
+	 
 
     @GetMapping("/login")
     public String login(Model model, String error, String logout) {
